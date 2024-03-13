@@ -1,0 +1,5 @@
+Data1<- read.CSV(file.choose(),header=T)
+Data1
+time<-c(19.09,19.55,17.69,17.63,25.15,27.27,25.24,21.65,20.92,22.61,15.7 1,22.04,22.60,24.25)
+library(moments)
+skewness(time) 

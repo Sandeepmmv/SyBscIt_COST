@@ -1,0 +1,7 @@
+a=array(c("yes","no"),dim=c(3,3,2))
+print(a)
+BMI=data.frame(gender=c("Female","Female","Male","Female"),height=c(152,155,165.2,170.0),weight=c(35,40,60,55),age=c(14,16,20,17)) 
+print(BMI)
+list1=list(c(2,6.5,sin))
+print(list1)
+print(class(list1))

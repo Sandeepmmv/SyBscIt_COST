@@ -1,0 +1,7 @@
+data<-read.csv(file.choose(),header=T)
+data
+sd(data$x)
+sd(data$y)
+var(data$x)
+var(data$y)
+cov(data$x,data$y)

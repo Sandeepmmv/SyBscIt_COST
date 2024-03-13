@@ -1,0 +1,4 @@
+data1<-read.csv(file.choose(),header=T) 
+data1
+mean(data$x)
+median(data$x)

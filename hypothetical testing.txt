@@ -1,0 +1,12 @@
+ alpha=.05
+ t.alpha=qt(1-alpha,df=n-1)
+ t.alpha 
+ xbar<-2.1
+ mu0<-2
+ Sigma<-0.25
+ n<-35
+ z=(xbar-mu0)/(Sigma/sqrt(n))
+ z
+ z.alpha<-qnorm(1-alpha)
+ alpha<-0.05
+ z.alpha 

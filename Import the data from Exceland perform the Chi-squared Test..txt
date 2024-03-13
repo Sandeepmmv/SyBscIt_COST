@@ -1,0 +1,11 @@
+Load Packages ( MASS ) 
+library("MASS")
+local({pkg<- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)if(nchar(pkg)) library(pkg, character.only=TRUE)}) 
+print(str(Cars93))
+
+library("MASS") 
+car.data<-data.frame(Cars93$AirBags,Cars93$Type) 
+car.data=table(Cars93$AirBags,Cars93$Type)
+print(car.data) > print(chisq.test(car.data))
+
+pbinom(4,size=12,prob=0.2)
