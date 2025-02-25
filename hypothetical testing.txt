@@ -1,12 +1,21 @@
- alpha=.05
- t.alpha=qt(1-alpha,df=n-1)
- t.alpha 
- xbar<-2.1
- mu0<-2
- Sigma<-0.25
- n<-35
- z=(xbar-mu0)/(Sigma/sqrt(n))
- z
- z.alpha<-qnorm(1-alpha)
- alpha<-0.05
- z.alpha 
+# Given values
+alpha <- 0.05
+xbar <- 2.1       # Sample mean
+mu0 <- 2          # Population mean (null hypothesis)
+Sigma <- 0.25     # Population standard deviation
+n <- 35           # Sample size
+
+# Degrees of freedom for t-distribution
+df <- n - 1
+
+# t-distribution critical value for a one-tailed test
+t.alpha <- qt(1 - alpha, df = df)
+print(t.alpha)
+
+# z-test calculation (for normal distribution)
+z <- (xbar - mu0) / (Sigma / sqrt(n))
+print(z)
+
+# Critical z-value for a one-tailed test (normal distribution)
+z.alpha <- qnorm(1 - alpha)
+print(z.alpha)
